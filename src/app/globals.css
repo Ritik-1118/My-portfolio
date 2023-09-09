@@ -25,3 +25,205 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+
+.img{
+  border: 5px solid rgb(225, 214, 9); 
+  border-radius: 50%;
+  padding: 5px;
+  filter: brightness(140%);
+}
+
+.right-10{
+  right: 17rem;
+}
+.-top-xyz{
+  top: 2.5rem;
+}
+.top-20{
+  margin-top: 70px;
+}
+.animate-spin-slow {
+  animation: moveImage 6s linear infinite;
+}
+@keyframes moveImage {
+  100% {
+      transform: rotate(360deg);
+  }
+}
+.text-accent {
+  --tw-text-opacity: 1;
+  color: rgb(241 48 36 / var(--tw-text-opacity));
+}
+.text-primary {
+  --tw-text-opacity: 1;
+  color: rgb(19 20 36 / var(--tw-text-opacity));
+}
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+.text-skyblue{
+  color: rgb(24, 129, 221);
+}
+.h{
+  font-size: 30px;
+  font-style: italic;
+  font-variant: small-caps;
+  font-stretch: expanded;
+}
+.h-2{
+  font-size: 15px;
+  font-style: oblique;
+}
+
+/* style for phone */
+@media screen and (max-width: 767px) {
+  .Display-none {
+    display: none;
+  }
+  .Display-yes{
+    text-align: center;
+  }
+  .in-ph-mt-5{
+    margin-top: 15%;
+  }
+}
+
+/* Styles for tablets (medium to large screens) */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .Display-none{
+    display: none;
+  }
+  .Display-yes{
+    text-align: center;
+  }
+  .in-ph-mt-5{
+    margin-top: 15%;
+    /* padding-top: 10px; */
+  }
+}
+
+.width-\[160px\] {
+  width: 120%;
+}
+.height-\[150px\] {
+  height: 100%;
+}
+.w-full {
+  width: 100%;
+}
+.w-screen {
+  width: 100vw;
+}
+
+.bg-circleStar {
+  background-image: url("/circle-star.svg");
+}
+.bg-cover {
+  background-size: cover;
+}
+.group:hover .group-hover\:translate-x-2 {
+  --tw-translate-x: 0.5rem;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+/* Default styles for the div */
+.div-container {
+  width: 100%; /* Takes up the full width of its container */
+  max-width: 800px; /* Set a maximum width to prevent it from becoming too wide */
+  margin: 0 auto; /* Center the div horizontally */
+  padding: 20px; /* Add some padding for spacing */
+
+  border: 1px solid #ccc;
+  border-radius: 20%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  color: aquamarine;
+}
+
+.text-style-1{
+  text-align: center;
+  font-style: oblique;
+  font-variant: small-caps;
+  font-size: 20px;
+  color: aquamarine;
+}
+.text-style-2{
+  text-align: center;
+  font-style: italic;
+  font-variant-ligatures: historical-ligatures;
+}
+
+.text-left{
+  text-align: left;
+}
+.text-right{
+  text-align: right;
+}
+.ml-13{
+  margin-left: 13%;
+}
+.ml-20{
+  margin-right: 20%;
+}
+.font-30{
+  font-size: 30px;
+}
+.font-20{
+  font-size: 20px;
+}
+.font-10{
+  font-size: 10px;
+}
+.flex-direction-c{
+  flex-direction: column;
+}
+
+.skills{
+  display: flex;
+}
+.skill-ml-5{
+  margin-left: 5%;
+}
+
+/* Media query for small screens (e.g., smartphones) */
+@media (max-width: 768px) {
+  
+  .div-container {
+    padding: 10px; /* Adjust padding for smaller screens */
+    font-size: 14px; /* Reduce font size for readability on smaller screens */
+  }
+}
+
+/* Media query for medium screens (e.g., tablets) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .div-container {
+    max-width: 600px; /* Adjust the maximum width for tablets */
+  }
+}
+
+/* Media query for large screens (e.g., desktops) */
+@media (min-width: 1025px) {
+  .div-container {
+    max-width: 800px; /* Restore the maximum width for larger screens */
+  }
+}
+@media (max-width: 500px) {
+  .skills{
+    display: flex;
+    flex-direction: column;
+  }
+  .skill-ml-5{
+    margin-left: 10%;
+  }
+  .skill-ph-ml{
+    margin-left: 10%;
+  }
+  .skill-h2{
+    margin-top: 20px;
+  }
+  .-top-xyz{
+    top: 2.5rem;
+  }
+}
