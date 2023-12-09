@@ -1,16 +1,18 @@
 "use client"
 import React from 'react';
-import Link from 'next/link'
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
-import {faWhatsapp,faTwitter,faInstagram,faLinkedinIn, faFacebookSquare} from '@fortawesome/free-brands-svg-icons'
+// import Link from 'next/link'
+// import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+// import {faWhatsapp,faTwitter,faInstagram,faLinkedinIn, faFacebookSquare} from '@fortawesome/free-brands-svg-icons'
 import { motion } from 'framer-motion';
 import { fadeIn } from '../../../../variants';
+import { FaGithub, FaWhatsapp, FaLinkedin, FaTwitter, FaInstagram } from 'react-icons/fa6';
 
-// For Email service
+// Imports For Email service
 import { useRef } from 'react';
 import emailjs from '@emailjs/browser'
 import {ToastContainer,toast} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
+import Link from 'next/link';
 
 const Contacts = () => {
 
@@ -38,12 +40,12 @@ const Contacts = () => {
             exit="hidden"
             transition={{duration: 0.5, ease: 'easeInOut'}}
             className="text-center text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-            <span className='text-skyblue' >CONTACT ME</span>
+            <span className='text-blue-500' >Contact </span><span className='text-blue-500'>Me</span>
             </motion.h1>
         </div>
 
-        <div className="w-full pt-10">
-            <div className="max-w-[500px] mx-auto mt-8">
+        <div className="w-full pb-32">
+            <div className="max-w-4xl mx-auto mt-8">
                 <motion.div 
                 variants={fadeIn('left',0.2)}
                 initial='hidden'
@@ -51,77 +53,86 @@ const Contacts = () => {
                 exit="hidden"
                 transition={{duration: 0.5, ease: 'easeInOut'}}
                 className='text-center'>
-                    <p className='text-style-1'>Thank you for reaching out! I&apos;m excited to connect with you. Your feedback and messages are valuable to me. Please feel free to drop me a message below.</p>
+                    <p className=' text-center text-lg'>Thank you for reaching out! I&apos;m excited to connect with you. Your feedback and messages are valuable to me. Please feel free to drop me a message below.</p>
                 </motion.div><br/>
             </div>
             <motion.div 
-            variants={fadeIn('up',0.1)}
-            initial="hidden"
-            animate="show"
-            exit="hidden"
-            transition={{duration: 0.5, ease: 'easeInOut'}}
-            className="flex flex-col space-y-4 md:space-y-0 items-center justify-center md:space-x-8">
-            {/* Contact Form */}
-            <div className="md:w-1/2">
-                <form ref={form} onSubmit={sendmail} className="bg-white p-6 shadow-md rounded-md">
-                <div className="mb-4">
-                    <label htmlFor="name" className="block text-gray-700 font-bold">Name</label>
-                    <input type="text" id="name" name="name" placeholder="Your Name" className="w-full py-2 px-3 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500" />
+                variants={fadeIn('up',0.1)}
+                initial="hidden"
+                animate="show"
+                exit="hidden"
+                transition={{duration: 0.5, ease: 'easeInOut'}}
+                className="flex flex-col space-y-4 md:space-y-0 items-center justify-center md:space-x-8 "
+            >
+                {/* Contact Form */}
+                <div className=" md:w-full lg:flex md:flex items-center justify-center">
+                    <div className=' px-4 lg:w-1/2'>
+                        <div className='border mb-3  px-10 py-3 rounded-lg'>
+                            <span className=' text-5xl py-5 underline underline-offset-0'>Dev Handle</span>
+                            <Link href="https://github.com/Ritik-1118">
+                                <div className='flex text-xl py-3'>
+                                    <p>Github</p>(&nbsp;
+                                    <p><FaGithub className=' cursor-pointer'/></p>&nbsp;):&nbsp;
+                                    <p>Ritik-1118</p>
+                                </div>
+                            </Link>
+                        </div>
+                        <div className='border mb-3  px-10 py-4 items-center justify-center rounded-lg'>
+                            <span className='text-5xl py-5 underline underline-offset-4'>Social Handle</span>
+                            <div className='text-xl py-4'>
+                                <p className=' py-1 flex'>Whatsapp &nbsp;
+                                    <Link href="https://api.whatsapp.com/send?phone=919310429524" className='flex'>
+                                        <span><FaWhatsapp className=' cursor-pointer'/></span>: +91 9310429524
+                                    </Link>
+                                </p>
+                                <p className=' py-1 flex'>Linkedin &nbsp; 
+                                    <Link href="https://www.linkedin.com/in/ritik-kumar-9999b6245" className='flex'>
+                                        <span><FaLinkedin className=' cursor-pointer'/></span>: ritik-kumar-9999b6245
+                                    </Link>
+                                </p>
+                                <p className=' py-1 flex'>Instagram &nbsp; 
+                                    <Link href="https://instagram.com/___.___unknown____.___?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" className='flex'>
+                                        <span><FaInstagram className=' cursor-pointer'/></span>: ___.___unknown____.___
+                                    </Link>
+                                </p>
+                                <p className=' py-1 flex'>Twitter &nbsp;
+                                    <Link href="https://twitter.com/RitikKu56343248" className='flex'>
+                                        <span><FaTwitter className=' cursor-pointer'/></span>: RitikKu56343248
+                                    </Link>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className=' lg:w-1/2'>
+                        <form ref={form} onSubmit={sendmail} className=" p-6 shadow-md rounded-md border">
+                            <div className="mb-4">
+                                <label htmlFor="name" className="block text-blue-500 font-bold">Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your Name" className="w-full py-2 px-3 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500" />
+                            </div>
+                            <div className="mb-4">
+                                <label htmlFor="email" className="block text-blue-500 font-bold">Email</label>
+                                <input type="email" id="email" name="email" placeholder="Your Email" className="w-full py-2 px-3 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500" />
+                            </div>
+                            <div className="mb-4">
+                                <label htmlFor="phone" className="block text-blue-500 font-bold">Phone</label>
+                                <input type="tel" id="phone" name="phone" placeholder="Your Phone" className="w-full py-2 px-3 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500" />
+                            </div>
+                            <div className="mb-4">
+                                <label htmlFor="message" className="block text-blue-500 font-bold">Message</label>
+                                <textarea id="message" name="message" rows="4" placeholder="Your Message" className="w-full py-2 px-3 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500"></textarea>
+                            </div>
+                            <div className="mt-6">
+                                <button type="submit" className="bg-blue-700 text-white py-2 px-4 rounded-md hover:bg-green-600 focus:outline-none focus:bg-indigo-600">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                    <ToastContainer
+                        position='top-center'
+                        hideProgressBar={true}
+                        theme='light'
+                        autoClose={2000}
+                    />
                 </div>
-                <div className="mb-4">
-                    <label htmlFor="email" className="block text-gray-700 font-bold">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Your Email" className="w-full py-2 px-3 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500" />
-                </div>
-                <div className="mb-4">
-                    <label htmlFor="phone" className="block text-gray-700 font-bold">Phone</label>
-                    <input type="tel" id="phone" name="phone" placeholder="Your Phone" className="w-full py-2 px-3 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500" />
-                </div>
-                <div className="mb-4">
-                    <label htmlFor="message" className="block text-gray-700 font-bold">Message</label>
-                    <textarea id="message" name="message" rows="4" placeholder="Your Message" className="w-full py-2 px-3 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500"></textarea>
-                </div>
-                <div className="mt-6">
-                    <button type="submit" className="bg-indigo-500 text-white py-2 px-4 rounded-md hover:bg-indigo-600 focus:outline-none focus:bg-indigo-600">Submit</button>
-                </div>
-                </form>
-                <ToastContainer
-                position='top-center'
-                hideProgressBar={true}
-                theme='light'
-                autoClose={2000}
-                />
-            </div>
-
-            {/* Social Media Icons */}
-            <div className="md:w-1/2 flex justify-center items-center mt-30">
-                <div className="text-2xl">
-                <Link href="https://twitter.com/RitikKu56343248" className="text-blue-500 hover:text-blue-700 mr-7">
-                    <i className="fab fa-twitter">
-                        <FontAwesomeIcon icon={faTwitter}/>
-                    </i>
-                </Link>
-                <Link href="https://www.facebook.com/UNKNOWN111819" className="text-blue-700 hover:text-blue-900 mr-7">
-                    <i className="fab fa-facebook">
-                        <FontAwesomeIcon icon={faFacebookSquare}/>
-                    </i>
-                </Link>
-                <Link href="https://wa.me/qr/53OS55VAGGHBA1" className="text-blue-700 hover:text-blue-900 mr-7">
-                    <i className="fab fa-whatsapp">
-                        <FontAwesomeIcon icon={faWhatsapp}/>
-                    </i>
-                </Link>
-                <Link href="https://instagram.com/___.___unknown____.___?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" className="text-red-600 hover:text-red-800 mr-7">
-                    <i className="fab fa-instagram">
-                        <FontAwesomeIcon icon={faInstagram}/>
-                    </i>
-                </Link>
-                <Link href="https://www.linkedin.com/in/ritik-kumar-9999b6245" className="text-blue-800 hover:text-blue-900">
-                    <i className="fab fa-linkedin">
-                        <FontAwesomeIcon icon={faLinkedinIn}/>
-                    </i>
-                </Link>
-                </div>
-            </div>
             </motion.div>
         </div>
         </div>

@@ -1,172 +1,60 @@
-"use client";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-import Themebutton from "./Themebutton";
-import { Disclosure } from "@headlessui/react";
-import React from "react";
+'use client'
 
-export default function Navbar() {
-  let pathname = usePathname() || "/";
-  return (
-    <Disclosure as="nav">
-      {({ open }) => (
-        <>
-          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="flex justify-between h-16">
-              <div className="flex justify-between w-full">
-                <div className="flex items-center">
-                  <Link href="/">
-                    <h1 className="text-2xl font-medium">
-                      Ritik <span className="text-teal-500">Kumar</span>
-                    </h1>
-                  </Link>
+import {
+    HiHome,
+    HiUser,
+    HiEnvelope,
+    HiViewColumns,
+    HiRectangleGroup,
+    HiChatBubbleBottomCenterText,
+} from 'react-icons/hi2';
+
+import Link from 'next/link';
+import { useRouter } from 'next/navigation';
+
+export const NavData = [
+    { name: 'home', path: '/', icon: <HiHome /> },
+    { name: 'about', path: '/pages/about', icon: <HiUser /> },
+    { name: 'projects', path: '/pages/projects', icon: <HiViewColumns /> },
+    { name: 'contact', path: '/pages/contacts', icon: <HiEnvelope /> },
+    
+    // { name: 'services', path: '/pages/services', icon: <HiRectangleGroup /> },
+    // { name: 'testimonials', path: '/pages/testimonials', icon: <HiChatBubbleBottomCenterText /> },
+
+    ];
+
+const Navbar = () => {
+    const router = useRouter();
+    const pathname = router.pathname;
+
+    return (
+        <nav className='flex fixed bottom-0 left-0 items-center xl:justify-center w-full xl:w-16 xl:max-w-md xl:h-screen translate-z-0'>
+        <div className='flex w-full xl:flex-col items-center justify-between xl:justify-center gap-y-10 px-4 md:px-40 xl:px-0 h-[80px] xl:h-max py-8 bg-blue-900 backdrop-blur-sm text-3xl xl:text-xl xl:rounded-full'>
+            {NavData.map((link, index) => (  
+            <Link
+                className={`${link.path === pathname && 'text-accent'} relative flex items-center group hover:text-cyan-500 transition-all duration-300`}
+                href={link.path}  
+                key={index}
+                
+            >
+                {/* tooltip */}
+                <div className='absolute pl-12 hidden xl:group-hover:flex'>
+                    <div className='bg-white relative flex items-center p-[6px] rounded-[3px]'>
+                    <div className='text-[12px] leading-none font-semibold capitalize text-blue-900'>
+                        {link.name}
+                    </div>
+                    {/* triangle */}
+                    <div className='border-solid border-l-white border-l-8 border-y-transparent border-y-[6px] absolute -left-4'></div>
+                    </div>
                 </div>
-                <div className="hidden sm:ml-6 sm:flex sm:space-x-8 sm:items-center">
+                
+                {/* icon */}
+                <div>{link.icon}</div>
+            </Link>
+            ))}
+        </div>
+        </nav>
+    );
+};
 
-                  {/* Home */}
-                  <Link href="/" prefetch className={`${
-                      pathname === "/"
-                        ? "border-teal-500 dark:text-white h-full inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
-                        : "border-transparent text-gray-500 dark:text-gray-300 dark:hover:text-white inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
-                    }`}
-                    >Home
-                  </Link>
-
-                  {/* About */}
-                  <Link
-                    href="/pages/about"
-                    prefetch
-                    className={`${
-                      pathname === "/pages/about"
-                        ? "border-teal-500 dark:text-white h-full inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
-                        : "border-transparent text-gray-500 dark:text-gray-300 dark:hover:text-white inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
-                    }`}
-                  >about
-                  </Link>
-
-                  {/* contacts */}
-
-                  <Link
-                    href="/pages/contacts"
-                    prefetch
-                    className={`${
-                      pathname === "/pages/contacts"
-                        ? "border-teal-500 dark:text-white h-full inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
-                        : "border-transparent text-gray-500 dark:text-gray-300 dark:hover:text-white inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
-                    }`}
-                    >contacts
-                  </Link>
-
-                  {/* projects */}
-                  <Link
-                    href="/pages/projects"
-                    prefetch
-                    className={`${
-                      pathname === "/pages/projects"
-                        ? "border-teal-500 dark:text-white h-full inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
-                        : "border-transparent text-gray-500 dark:text-gray-300 dark:hover:text-white inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
-                    }`}
-                  >Projects
-                  </Link>
-                  <Themebutton />
-                </div>
-              </div>
-
-              <div className="-mr-2 flex items-center sm:hidden">
-                <Themebutton />
-                <Disclosure.Button className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-teal-500 dark:hover:bg-gray-800">
-                  {open ? (
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.5}
-                      stroke="currentColor"
-                      className="w-6 h-6"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M6 18L18 6M6 6l12 12"
-                      />
-                    </svg>
-                  ) : (
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      fill="none"
-                      viewBox="0 0 24 24"
-                      strokeWidth={1.5}
-                      stroke="currentColor"
-                      className="w-6 h-6"
-                    >
-                      <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                      />
-                    </svg>
-                  )}
-                </Disclosure.Button>
-              </div>
-            </div>
-          </div>
-
-          <Disclosure.Panel className="sm:hidden">
-            <div className="pt-2 pb-3 space-y-1">
-
-              {/* Home */}
-              <Link
-                href="/"
-                prefetch
-                className={`${
-                  pathname === "/"
-                    ? "bg-teal-50  border-teal-500 text-teal-500 block pl-3 pr-4 py-2 border-l-4 text-base font-medium dark:bg-gray-800"
-                    : "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-teal-500 block pl-3 pr-4 py-2 dark:hover:bg-gray-700 border-l-4 text-base font-medium dark:text-white"
-                } `}
-              >Home
-              </Link>
-
-              {/* About */}
-              <Link
-                href="/pages/about"
-                prefetch
-                className={`${
-                  pathname === "/pages/about"
-                    ? "bg-teal-50 border-teal-500 text-teal-500 block pl-3 pr-4 py-2 border-l-4 text-base font-medium dark:bg-gray-800"
-                    : "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-teal-500 block pl-3 pr-4 py-2 dark:hover:bg-gray-700 border-l-4 text-base font-medium dark:text-white"
-                } `}
-                >about
-              </Link>
-
-              {/* contacts */}
-
-              <Link
-                href="/pages/contacts"
-                prefetch
-                className={`${
-                  pathname === "/pages/about"
-                    ? "bg-teal-50 border-teal-500 text-teal-500 block pl-3 pr-4 py-2 border-l-4 text-base font-medium dark:bg-gray-800"
-                    : "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-teal-500 block pl-3 pr-4 py-2 dark:hover:bg-gray-700 border-l-4 text-base font-medium dark:text-white"
-                } `}
-                >contacts
-              </Link>
-
-              {/* projects */}
-              <Link
-                href="/pages/projects"
-                prefetch
-                className={`${
-                  pathname === "/projects"
-                    ? "bg-teal-50 border-teal-500 text-teal-500 block pl-3 pr-4 py-2 border-l-4 text-base font-medium dark:bg-gray-800"
-                    : "border-transparent text-gray-500 hover:bg-gray-50 hover:border-gray-300 hover:text-teal-500 block pl-3 pr-4 py-2 dark:hover:bg-gray-700 border-l-4 text-base font-medium dark:text-white"
-                } `}
-              >
-                Projects
-              </Link>
-            </div>
-          </Disclosure.Panel>
-        </>
-      )}
-    </Disclosure>
-  );
-}
+export default Navbar;
