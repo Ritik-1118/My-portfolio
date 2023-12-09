@@ -73,7 +73,7 @@ const Projects = () => {
                         </div>
                     </div>
                     <Project 
-                        img="https://drive.google.com/file/d/1J-wlB-MvM9HmOpch_BPi20O3m_vHEUJ8/view?usp=drive_link" 
+                        img="/project_img/Whatsapp-clone.png" 
                         projectName="Realtime ChatApp"
                         url="https://chatapp-dun-nine.vercel.app/"
                         gitUrl=""

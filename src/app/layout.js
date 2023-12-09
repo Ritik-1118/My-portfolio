@@ -1,5 +1,5 @@
 import "./globals.css";
-// import { Metadata } from "next";
+import { Metadata } from "next";
 import { Inter } from "next/font/google";
 // import Nav from "./components/Nav2";
 import Navbar from "./components/Navbar"
@@ -23,7 +23,7 @@ export const metadata = {
 
     export default function RootLayout({ children }) {
         return (
-        <html lang="en" suppressHydrationWarning>
+        <html lang="en">
         <thead className={`${inter.className} bg-white text-black home dark:text-white h-full selection:bg-gray-50 dark:selection:bg-gray-800`}>
             <Navbar/>
         </thead>
@@ -42,5 +42,5 @@ export const metadata = {
             </body>
         </tbody>
         </html>
-    );
+    )
 }

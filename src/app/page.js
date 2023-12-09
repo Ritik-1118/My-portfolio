@@ -96,7 +96,7 @@ export default function Home() {
                                 src={"/Gif/F.jpg"}
                                 width={500}
                                 height={550}
-                                className="custom-box-shadow hover-effect img-bg rounded-lg border border-4 border-gray-400 border-double"
+                                className="custom-box-shadow hover-effect img-bg rounded-lg  border-4 border-gray-400 border-double"
                             />
                         </Link>
                     </motion.div>                    
