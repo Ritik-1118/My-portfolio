@@ -13,14 +13,14 @@ export default function Nav() {
             <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between h-16">
                 <div className="flex justify-between w-full">
-                    <div className="flex items-center">
-                    <Link href="/" >
-                        <h1 className="text-2xl font-medium flex">
-                            {/* <Image src={'/fav/logo2.png'} width={100} height={100} alt="Logo" className="text-blue-600 border border-red-600"></Image> 
-                            Ritik <span className="text-blue-400">Kumar</span>*/}
-                            <FaRegistered className="  text-5xl mt-4 mx-4 text-blue-500"/>
-                        </h1>
-                    </Link>
+                    <div className="flex items-center pt-10">
+                        <Link href="/" >
+                            <h1 className="text-2xl font-medium flex">
+                                <Image src={'/logo.png'} width={100} height={100} alt="Logo" className=" w-14"></Image> 
+                                {/*Ritik <span className="text-blue-400">Kumar</span>
+                                <FaRegistered className="  text-5xl mt-4 mx-4 text-blue-500"/>*/}
+                            </h1>
+                        </Link>
                     </div>
 
                     {/* Social media's link */}

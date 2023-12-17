@@ -21,8 +21,8 @@ export const metadata = {
     // }
     };
 
-    export default function RootLayout({ children }) {
-        return (
+export default function RootLayout({ children }) {
+    return (
         <html lang="en">
         <thead className={`${inter.className} bg-white text-black home dark:text-white h-full selection:bg-gray-50 dark:selection:bg-gray-800`}>
             <Navbar/>
