@@ -92,13 +92,11 @@
   color: rgb(24, 129, 221);
 }
 .h{
-  font-size: 30px;
   /* font-style: italic; */
   font-variant: small-caps;
   font-stretch: expanded;
 }
 .h-2{
-  font-size: 15px;
   font-style: oblique;
 }
 .mt-10{
@@ -363,15 +361,7 @@
 /* Heading animation */
 .txt{
   color: #161868;
-  font-weight: bold;
   font-family: Arial;
-}
-.txt::before{
-  color: #061fbf;
-  content: 'Hello Everyone!';
-  position: absolute;
-  mix-blend-mode: difference;
-  filter: blur(1px);
 }
 .neon-wrapper{
   display: inline-flex;

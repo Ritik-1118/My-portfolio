@@ -16,7 +16,7 @@ export default function Nav() {
                     <div className="flex items-center pt-10">
                         <Link href="/" >
                             <h1 className="text-2xl font-medium flex">
-                                <Image src={'/logo.png'} width={100} height={100} alt="Logo" className=" w-14"></Image> 
+                                <Image src={'/Logo3.png'} width={100} height={100} alt="Logo" className=" w-14"></Image> 
                                 {/*Ritik <span className="text-blue-400">Kumar</span>
                                 <FaRegistered className="  text-5xl mt-4 mx-4 text-blue-500"/>*/}
                             </h1>

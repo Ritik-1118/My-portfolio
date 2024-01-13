@@ -1,8 +1,8 @@
 import React from "react"
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHtml5, faCss3, faJs, faReact, faNode, faPython, faCpp, faPhp, faGit, faGithub, faWordpress,faBootstrap, } from "@fortawesome/free-brands-svg-icons";
-import { FaDatabase } from 'react-icons/fa6';
+import { faHtml5, faCss3, faJs, faReact, faNode, faPython, faCpp, faPhp, faGit, faGithub, faWordpress, } from "@fortawesome/free-brands-svg-icons";
+import { FaBootstrap, FaDatabase } from 'react-icons/fa6';
 
 export const Skills = ({name,x,y,icon}) =>{
     const getIcon = () => {
@@ -29,6 +29,8 @@ export const Skills = ({name,x,y,icon}) =>{
                 return <FontAwesomeIcon icon={faGithub} />;
             case "faDatabase":
                 return <FaDatabase className="text-blue-400" />
+            case "faBootstrap":
+                return <FaBootstrap className="text-blue-400" />
             case "faWordpress":
                 return <FontAwesomeIcon icon={faWordpress} />;
             default:
@@ -62,10 +64,10 @@ const SkillsContainer = () =>{
                 <Skills name="CSS" x="-10vw" y="-14vw" icon="faCss3"/>
                 <Skills name="JavaScript" x="9vw" y="-14vw" icon="faJs"/>
                 <Skills name="REACT" x="-15vw" y="-5vw" icon="faReact"/>
-                <Skills name="NEXT" x="15vw" y="-5vw" icon="fanext"/>
+                <Skills name="NEXT . JS" x="15vw" y="-5vw" icon=""/>
                 <Skills name="NODE" x="0vw" y="-8vw" icon="faNode"/>
                 <Skills name="EXPRESS" x="0vw" y="8vw" icon=""/>
-                <Skills name="BOOTSTRAP" x="-25vw" y="-10vw" icon=""/>
+                <Skills name="BOOTSTRAP" x="-25vw" y="-10vw" icon="faBootstrap"/>
                 <Skills name="TAILWIND" x="25vw" y="-10vw" icon=""/>
                 <Skills name="PYTHON" x="15vw" y="5vw" icon="faPython"/>
                 <Skills name="C++" x="-15vw" y="5vw"/>

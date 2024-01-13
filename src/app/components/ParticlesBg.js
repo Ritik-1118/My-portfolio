@@ -26,74 +26,74 @@ const ParticlesBg = () => {
         },
         background:{
             color:{
-            value: '',
+                value: '',
             },
         },
         fpsLimit: 120,
         interactivity:{
         events:{
-            onclick:{
-            enable:false,
-            mode:'push',
-            },
-            onHover:{
-            enable:true,
-            mode: 'repulse',
-            },
-            resize:true
+                onclick:{
+                    enable:false,
+                    mode:'push',
+                },
+                onHover:{
+                    enable:true,
+                    mode: 'repulse',
+                },
+                resize:true
             },
             modes:{
-            push:{
-                quantity:90
-            },
-            repulse:{
-                distance:200,
-                duration:0.4,
-            }
+                push:{
+                    quantity:90
+                },
+                repulse:{
+                    distance:200,
+                    duration:0.4,
+                }
             }
         },
         particles:{
             color:{
-            value:'#e68e2e',
+                value:'#0000ff',
             },
             links:{
-            color:'#f5d393',
-            distance: 150,
-            enable: true, 
-            opacity: 0.5,
-            width: 1,
+                color:'#33ffff',
+                distance: 150,
+                enable: true, 
+                opacity: 0.5,
+                width: 1,
             },
             collisions:{
-            enable: true, 
+                enable: true, 
             },
             move:{
-            direction: 'none',
-            enable :true,
-            outModes:{
-                default: 'bounce',  
-            },
-            random: false,
-            speed:1,  
-            straight:false,
+                direction: 'none',
+                enable :true,
+                outModes:{
+                    default: 'bounce',  
+                },
+                random: false,
+                speed:1,  
+                straight:false,
             },
             number:{
-            density:{
-                enable: true,
-                area: 800
-            },
-            value: 80,
+                density:{
+                    enable: true,
+                    area: 800
+                },
+                value: 80,
             },
             opacity:{
-            value: 0.5,
+                value: 0.5,
             },
             shape:{
-            type: 'circle',
+                type: 'circle',
             },
             size:{
-            value:{
-                min:1,
-                max:5,
-            }
+                value:{
+                    min:1,
+                    max:5,
+                }
             }
         },
         detectRetina: true,
