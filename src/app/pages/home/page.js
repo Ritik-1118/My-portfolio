@@ -16,7 +16,7 @@ export default function Home() {
         // Default crooked rotation effect with CSS
         const currentElementDefault = tiltRef.current;
         if (currentElementDefault) {
-                currentElementDefault.style.transform = 'rotate(-5deg) skewX(155deg) skewY(15deg)';
+                currentElementDefault.style.transform = 'rotate(0deg) skewX(-10deg) skewY(0deg)';
                 currentElementDefault.style.transformOrigin = 'top left';
             }
             const onHover = () =>{
@@ -118,10 +118,10 @@ export default function Home() {
                             <Image
                                 ref={tiltRef}
                                 alt="Avatar"
-                                src={"/imgs/i3.jpeg"}
+                                src={"/Gif/G.gif"}
                                 width={500}
                                 height={550}
-                                className="custom-box-shadow hover-effect img-bg rounded-lg  border-4 border-gray-400 border-double"
+                                className="custom-box-shadow hover-effect img-bg rounded-lg border-8 border-blue-700 border-double"
                             />
                         </Link>
                     </motion.div>                    
