@@ -27,7 +27,7 @@ const Footer = () => {
     }, []);
 
     return (
-        <footer className={`fixed bottom-0 left-0 right-0 bg-gray-900 text-white py-4 text-center transition-opacity translate-z-0 duration-500 ${showFooter ? '' : 'hidden'}`}>
+        <footer className={`bottom-0 left-0 right-0 bg-blue-900 text-white py-4 text-center transition-opacity translate-z-0 duration-500 ${showFooter ? '' : 'hidden'}`}>
             <div className="container mx-auto">
                 <p>&copy; {new Date().getFullYear()} Portfolio. All rights reserved.</p>
             </div>

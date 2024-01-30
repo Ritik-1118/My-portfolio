@@ -362,7 +362,8 @@
 
 /* Heading animation */
 .txt{
-  color: #161868;
+  /* color: #161868; */
+  color: #0e106c;
   font-family: Arial;
 }
 .neon-wrapper{

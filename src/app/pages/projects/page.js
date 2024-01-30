@@ -44,11 +44,12 @@ const Projects = () => {
                         </div>
                     </div>
                 </motion.div>
-                <div className='flex'>
+                <div className='flex items-center'>
                     <hr className=' text-3xl w-1/2'/>
                     <div className='border rounded-full text-2xl px-3'>2</div>
                     <hr className=' text-3xl w-1/2'/>
                 </div>
+
                 {/* Project 2 */}
                 <motion.div 
                     whileHover={{scale:1.05}}
@@ -57,6 +58,47 @@ const Projects = () => {
                     transition={{duration:1.5}}
                     className='grid lg:grid-cols-12 md:grid-cols-2 sm:grid-cols-4 lg:gap-24 sm:gap-6 py-20'
                 >
+                    <div className='col-span-6'>
+                        <div className=' text-4xl py-4 underline underline-offset-8 font-bold'>MERN-STACK : Solvify</div>
+                        <div className='flex'>
+                            <p className=' text-lg pt-4'>Explore my MERN project, uniting Node.js, Express.js, React.js, and Tailwind CSS for a seamless full-stack experience. It boasts secure user authentication with JWT, responsive design for various devices, and an admin panel for efficient management. This project exemplifies my ability to deliver modern, user-friendly web applications, blending backend and frontend technologies seamlessly.</p>
+                        </div>
+                        <div className='my-5'>
+                            <p className=' text-3xl mb-4 underline underline-offset-4 flex'>Tools </p>
+                            <button type="button" className=' border rounded-lg px-2 py-1 mr-5 my-2 text-lg font-semibold'> React.js</button>
+                            <button type="button" className=' border rounded-lg px-2 py-1 mr-5 my-2 text-lg font-semibold'> Node.js</button>
+                            <button type="button" className=' border rounded-lg px-2 py-1 mr-5 my-2 text-lg font-semibold'> Express</button>
+                            <button type="button" className=' border rounded-lg px-2 py-1 mr-5 my-2 text-lg font-semibold'> Tailwind</button>
+                            <button type="button" className=' border rounded-lg px-2 py-1 mr-5 my-2 text-lg font-semibold'> JWT</button>
+                            <button type="button" className=' border rounded-lg px-2 py-1 mr-5 my-2 text-lg font-semibold'> Vercel</button>
+                        </div>
+                    </div>
+                    <Project 
+                        img="/project_img/solvify.png" 
+                        projectName="SOlvify MERN-STACK"
+                        url="https://solvify-alpha.vercel.app/"
+                        gitUrl="https://github.com/Ritik-1118/Solvify"
+                    />
+                </motion.div>
+                <div className='flex items-center'>
+                    <hr className=' text-3xl w-1/2'/>
+                    <div className='border rounded-full text-2xl px-3'>3</div>
+                    <hr className=' text-3xl w-1/2'/>
+                </div>
+                {/* Project 3 */}
+                <motion.div 
+                    whileHover={{scale:1.05}}
+                    initial={{x:0,y:0}}
+                    whileInView={{x:"0vw",y:"0vw"}}
+                    transition={{duration:1.5}}
+                    className='grid lg:grid-cols-12 md:grid-cols-2 sm:grid-cols-4 lg:gap-24 sm:gap-6 py-20'
+                >   
+                    <Project 
+                        img="/project_img/Whatsapp-clone.png" 
+                        projectName="Realtime ChatApp"
+                        url="https://chatapp-dun-nine.vercel.app/"
+                        gitUrl=""
+                    />
                     <div className='col-span-6'>
                         <div className=' text-4xl py-4 underline underline-offset-8 font-bold'>Realtime Live ChatApp</div>
                         <div className='flex'>
@@ -72,19 +114,14 @@ const Projects = () => {
                             <button type="button" className=' border rounded-lg px-2 py-1 mr-5 my-2 text-lg font-semibold'> Vercel</button>
                         </div>
                     </div>
-                    <Project 
-                        img="/project_img/Whatsapp-clone.png" 
-                        projectName="Realtime ChatApp"
-                        url="https://chatapp-dun-nine.vercel.app/"
-                        gitUrl=""
-                    />
+                    
                 </motion.div>
-                <div className='flex'>
+                <div className='flex items-center'>
                     <hr className=' text-3xl w-1/2'/>
-                    <div className='border rounded-full text-2xl px-3'>3</div>
+                    <div className='border rounded-full text-2xl px-3'>4</div>
                     <hr className=' text-3xl w-1/2'/>
                 </div>
-                {/* Project 3 */}
+                {/* Project 4 */}
                 <motion.div 
                     whileHover={{scale:1.05}}
                     initial={{x:0,y:0}}
@@ -92,12 +129,6 @@ const Projects = () => {
                     transition={{duration:1.5}}
                     className='grid lg:grid-cols-12 md:grid-cols-2 sm:grid-cols-4 lg:gap-24 sm:gap-6 py-20'
                 >
-                    <Project 
-                        img="/project_img/online-store.png" 
-                        projectName="Online-Shoe-store"
-                        url="https://online-shoe-store-sepia.vercel.app/"
-                        gitUrl="#"
-                    />
                     <div className='col-span-6'>
                         <div className=' text-5xl py-4 underline underline-offset-8 font-bold'>Online-Shoe-store</div>
                         <div className='text-lg pt-4'>
@@ -113,14 +144,19 @@ const Projects = () => {
                             <button type="button" className=' border rounded-lg px-2 py-1 mr-5 text-lg my-2 font-semibold'> Vercel</button>
                         </div>
                     </div>
-                    
+                    <Project 
+                        img="/project_img/online-store.png" 
+                        projectName="Online-Shoe-store"
+                        url="https://online-shoe-store-sepia.vercel.app/"
+                        gitUrl="#"
+                    />
                 </motion.div>
-                <div className='flex'>
+                <div className='flex items-center'>
                     <hr className=' text-3xl w-1/2'/>
-                    <div className='border rounded-full text-2xl px-3'>4</div>
+                    <div className='border rounded-full text-2xl px-3'>5</div>
                     <hr className=' text-3xl w-1/2'/>
                 </div>
-                {/* Project 4 */}
+                {/* Project 5 */}
                 <motion.div 
                     whileHover={{scale:1.05}}
                     initial={{x:0,y:0}}
@@ -128,6 +164,12 @@ const Projects = () => {
                     transition={{duration:1.5}}
                     className='grid lg:grid-cols-12 md:grid-cols-2 sm:grid-cols-4 lg:gap-24 sm:gap-6 py-20'
                 >
+                    <Project 
+                        img="/project_img/Converter.png" 
+                        projectName="currency_converter"
+                        url="#"
+                        gitUrl="https://github.com/Ritik-1118/Currency-converter"
+                    />
                     <div className='col-span-6'>
                         <div className=' text-4xl py-4 underline underline-offset-8 font-bold'>Currency_converter</div>
                         <div className='flex'>
@@ -140,12 +182,6 @@ const Projects = () => {
                             <button type="button" className=' border rounded-lg px-2 py-1 mr-5 my-2 text-lg font-semibold'> Next.js</button>
                         </div>
                     </div>
-                    <Project 
-                        img="/project_img/Converter.png" 
-                        projectName="currency_converter"
-                        url="#"
-                        gitUrl="https://github.com/Ritik-1118/Currency-converter"
-                    />
                     <div className=''>
 
                     </div>
