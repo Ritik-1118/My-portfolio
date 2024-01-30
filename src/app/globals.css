@@ -62,7 +62,9 @@
   padding: 5px;
   filter: brightness(140%);
 }
-
+.header-bg{
+    background-color: #05014f;
+}
 .right-10{
   right: 17rem;
 }

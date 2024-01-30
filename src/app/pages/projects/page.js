@@ -34,7 +34,7 @@ const Projects = () => {
                     <div className='col-span-6 my-4'>
                         <div className=' text-5xl py-4 underline underline-offset-8 font-bold'>My-Portfolio</div>
                         <div className='flex'>
-                            <p className=' text-lg pt-4'>The portfolio itself is a testament to my skills, built using Next.js for a smooth, optimized, and lightning-fast user experience. Tailwind CSS brings a modern and stylish design, ensuring an aesthetically pleasing presentation of my work.</p>
+                            <p className=' text-lg pt-4 italic'>The portfolio itself is a testament to my skills, built using Next.js for a smooth, optimized, and lightning-fast user experience. Tailwind CSS brings a modern and stylish design, ensuring an aesthetically pleasing presentation of my work.</p>
                         </div>
                         <div className='my-5'>
                             <p className=' text-3xl mb-4 underline underline-offset-4 flex'>Tools </p>
@@ -61,7 +61,7 @@ const Projects = () => {
                     <div className='col-span-6'>
                         <div className=' text-4xl py-4 underline underline-offset-8 font-bold'>MERN-STACK : Solvify</div>
                         <div className='flex'>
-                            <p className=' text-lg pt-4'>Explore my MERN project, uniting Node.js, Express.js, React.js, and Tailwind CSS for a seamless full-stack experience. It boasts secure user authentication with JWT, responsive design for various devices, and an admin panel for efficient management. This project exemplifies my ability to deliver modern, user-friendly web applications, blending backend and frontend technologies seamlessly.</p>
+                            <p className=' text-lg pt-4 italic'>Explore my MERN project, uniting Node.js, Express.js, React.js, and Tailwind CSS for a seamless full-stack experience. It boasts secure user authentication with JWT, responsive design for various devices, and an admin panel for efficient management. This project exemplifies my ability to deliver modern, user-friendly web applications, blending backend and frontend technologies seamlessly.</p>
                         </div>
                         <div className='my-5'>
                             <p className=' text-3xl mb-4 underline underline-offset-4 flex'>Tools </p>
@@ -102,7 +102,7 @@ const Projects = () => {
                     <div className='col-span-6'>
                         <div className=' text-4xl py-4 underline underline-offset-8 font-bold'>Realtime Live ChatApp</div>
                         <div className='flex'>
-                            <p className=' text-xl pt-4'>Designed and developed a dynamic Realtime ChatApp, empowering users with seamless individual messaging(text and emojies), multimedia sharing(images and audio), and advanced video and voice calling capabilities for an enriched communication experience.</p>
+                            <p className=' text-xl pt-4 italic'>Designed and developed a dynamic Realtime ChatApp, empowering users with seamless individual messaging(text and emojies), multimedia sharing(images and audio), and advanced video and voice calling capabilities for an enriched communication experience.</p>
                         </div>
                         <div className='my-5'>
                             <p className=' text-3xl mb-4 underline underline-offset-4 flex'>Tools </p>
@@ -131,7 +131,7 @@ const Projects = () => {
                 >
                     <div className='col-span-6'>
                         <div className=' text-5xl py-4 underline underline-offset-8 font-bold'>Online-Shoe-store</div>
-                        <div className='text-lg pt-4'>
+                        <div className='text-lg pt-4 italic'>
                             <p>Online-Shoe-store is an online store, where users can find array of shoes and services, It comes with an administrator dashboard for creating, deleting, updating posts basically it can perform CRUD operations.</p>
                             <br /><p>It also comes with a checkout functionality using stripe which makes it easy to pay for a purchase online.</p>
                         </div>
@@ -173,7 +173,7 @@ const Projects = () => {
                     <div className='col-span-6'>
                         <div className=' text-4xl py-4 underline underline-offset-8 font-bold'>Currency_converter</div>
                         <div className='flex'>
-                            <p className=' text-xl pt-4'>Designed a simple Currency Converter Web App,providing users with real-time exchange rates, effortless currency conversion.</p>
+                            <p className=' text-xl pt-4 italic'>Designed a simple Currency Converter Web App,providing users with real-time exchange rates, effortless currency conversion.</p>
                         </div>
                         <div className='my-5'>
                             <p className=' text-3xl mb-4 underline underline-offset-4 flex'>Tools </p>

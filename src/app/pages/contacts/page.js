@@ -7,7 +7,7 @@ import { fadeIn } from '../../../../variants';
 
 const Contacts = () => {
     return (
-        <div className="min-h-screen divide-y divide-gray-200 dark:divide-gray-700">
+        <div className="min-h-screen ">
             <div className="space-y-2 pt-6 pb-8 md:space-y-5">
                 <motion.h1 
                     variants={fadeIn('right',0.2)}
@@ -20,6 +20,8 @@ const Contacts = () => {
                     <span className='text-blue-500' >Contact </span><span className='text-blue-500'>Me</span>
                 </motion.h1>
             </div>
+            <hr className=' text-blue-600'/>
+
             <div className="w-full pb-4 items-center justify-center">
                 <div className="max-w-4xl mx-auto mt-8">
                     <motion.div 
@@ -34,9 +36,10 @@ const Contacts = () => {
                     </motion.div>
                 </div>
             </div>
-            <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-4">
-                <div className="p-4">
-                    {/* First Column */}
+
+            <div className="mb-32 mx-auto grid grid-cols-1 lg:grid-cols-2 gap-4">
+                <div className="p-4 hidden sm:flex">
+                    {/* Left */}
                     <motion.div 
                         variants={fadeIn('up',0.1)}
                         initial="hidden"
@@ -49,7 +52,7 @@ const Contacts = () => {
                     </motion.div>
                 </div>
                 <div className="p-4">
-                    {/* First Column */}
+                    {/* Right*/}
                     <motion.div 
                         variants={fadeIn('up',0.1)}
                         initial="hidden"

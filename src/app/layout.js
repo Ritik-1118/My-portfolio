@@ -1,4 +1,5 @@
 import "./globals.css";
+import Head from 'next/head';
 import { Metadata } from "next";
 import { Inter } from "next/font/google";
 // import Nav from "./components/Nav2";
@@ -16,7 +17,7 @@ export const metadata = {
     title: "My Portfolio",
     description: "Created By Ritik",
     // icon:{
-    //   icon:['/favicon.ico?v=4'],
+    //     icon:['/fav/logo2.png'],
     //   apple:['/apple-touch-icon.png?v=4'],
     // }
     };

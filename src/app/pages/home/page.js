@@ -93,7 +93,7 @@ export default function Home() {
                         </motion.div>
                     </div>
                     {/* Projects btn */}
-                    <div className="pt-28 mt-12 sm:mt-0 ">
+                    <div className="py-28 mt-20 sm:mt-0 ">
                         <motion.div
                             variants={fadeIn('right', 1.1)}
                             initial='hidden'

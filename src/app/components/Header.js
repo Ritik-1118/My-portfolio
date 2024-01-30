@@ -10,21 +10,17 @@ import { FaRegistered } from "react-icons/fa6";
 export default function Nav() {
     return (
             <>
-            <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex justify-between h-16">
-                <div className="flex justify-between w-full">
-                    <div className="flex items-center pt-10">
+            <div className="sticky top-0 z-50 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 header-bg">
+                <div className="flex items-center justify-between w-full h-16">
+                    <div className="flex items-center ">
                         <Link href="/" >
                             <h1 className="text-2xl font-medium flex">
                                 <Image src={'/Logo3.png'} width={100} height={100} alt="Logo" className=" w-14"></Image> 
-                                {/*Ritik <span className="text-blue-400">Kumar</span>
-                                <FaRegistered className="  text-5xl mt-4 mx-4 text-blue-500"/>*/}
                             </h1>
                         </Link>
                     </div>
-
                     {/* Social media's link */}
-                    <div className=" sm:ml-6 sm:flex sm:items-center in-ph-mt-3">
+                    <div className=" items-center sm:ml-6 sm:flex sm:items-center mt-1">
                         <Link href="https://github.com/Ritik-1118" className="text-blue-500 hover:text-blue-700 mr-7">
                             <i className="fab  fa-github">
                                 <FontAwesomeIcon icon={faGithub}/>
@@ -53,8 +49,6 @@ export default function Nav() {
                     </div>
                 </div>
             </div>
-            </div>
-
         
         </>
     );
