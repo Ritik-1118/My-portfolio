@@ -6,7 +6,6 @@ import { Inter } from "next/font/google";
 import Navbar from "./components/Navbar"
 import Header from "./components/Header"
 import Footer from "./components/Footer"
-import { Provider } from "./components/Provider";
 import ParticlesBg from "./components/ParticlesBg"
 
 
@@ -25,23 +24,17 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
-        <thead className={`${inter.className} bg-white text-black home dark:text-white h-full selection:bg-gray-50 dark:selection:bg-gray-800`}>
-            <Navbar/>
-        </thead>
-        <tbody>
             <body
-                className={`${inter.className} bg-white text-black home dark:text-white h-full selection:bg-gray-50 dark:selection:bg-gray-800`}
+                className={`${inter.className} bg-blue-900 text-black home dark:text-white h-full selection:bg-gray-50 dark:selection:bg-gray-800`}
             >
-                <Provider>
+                    <Navbar/>
                     <Header/>
                     <main className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
                         {children}
                     </main>
-                </Provider>
                 <Footer />
                 <ParticlesBg />
             </body>
-        </tbody>
         </html>
     )
 }

@@ -1,6 +1,7 @@
 "use client"
 import Project from "../../components/CreateProject"
 import { motion } from 'framer-motion';
+import images from "../../components/ArrayOfImages"
 
 const Projects = () => {
     return (
@@ -26,7 +27,7 @@ const Projects = () => {
                     className='grid lg:grid-cols-12 md:grid-cols-2 sm:grid-cols-4 lg:gap-24 sm:gap-6 py-20'
                 >
                     <Project 
-                        img="/project_img/Portfolio.png" 
+                        img={images.portfolio} 
                         projectName="My-Portfolio"
                         url="https://my-portfolio-ritik-1118.vercel.app/"
                         gitUrl="https://github.com/Ritik-1118/My-portfolio"
@@ -74,7 +75,7 @@ const Projects = () => {
                         </div>
                     </div>
                     <Project 
-                        img="/project_img/solvify.png" 
+                        img={images.solvify}
                         projectName="SOlvify MERN-STACK"
                         url="https://solvify-alpha.vercel.app/"
                         gitUrl="https://github.com/Ritik-1118/Solvify"
@@ -94,7 +95,7 @@ const Projects = () => {
                     className='grid lg:grid-cols-12 md:grid-cols-2 sm:grid-cols-4 lg:gap-24 sm:gap-6 py-20'
                 >   
                     <Project 
-                        img="/project_img/Whatsapp-clone.png" 
+                        img={images.whatsApp_clone}
                         projectName="Realtime ChatApp"
                         url="https://chatapp-dun-nine.vercel.app/"
                         gitUrl=""
@@ -145,7 +146,7 @@ const Projects = () => {
                         </div>
                     </div>
                     <Project 
-                        img="/project_img/online-store.png" 
+                        img={images.online_store}
                         projectName="Online-Shoe-store"
                         url="https://online-shoe-store-sepia.vercel.app/"
                         gitUrl="#"
@@ -165,7 +166,7 @@ const Projects = () => {
                     className='grid lg:grid-cols-12 md:grid-cols-2 sm:grid-cols-4 lg:gap-24 sm:gap-6 py-20'
                 >
                     <Project 
-                        img="/project_img/Converter.png" 
+                        img={images.converter}
                         projectName="currency_converter"
                         url="#"
                         gitUrl="https://github.com/Ritik-1118/Currency-converter"

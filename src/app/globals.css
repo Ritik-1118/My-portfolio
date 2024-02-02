@@ -37,12 +37,12 @@
     background-position: center;
 }
 .bg-about{
-  background-color: rgb(50, 50, 87);
+    background-color: rgb(50, 50, 87);
 }
 .font-style{
-  font-style: oblique;
-  font-variant: small-caps;
-  text-decoration: solid;
+    font-style: oblique;
+    font-variant: small-caps;
+    text-decoration: solid;
 }
 
 .img-bg{

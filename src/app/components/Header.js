@@ -10,12 +10,12 @@ import { FaRegistered } from "react-icons/fa6";
 export default function Nav() {
     return (
             <>
-            <div className="sticky top-0 z-50 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 header-bg">
+            <div className="sticky top-0 z-50 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 header-bg rounded-b-xl">
                 <div className="flex items-center justify-between w-full h-16">
                     <div className="flex items-center ">
                         <Link href="/" >
                             <h1 className="text-2xl font-medium flex">
-                                <Image src={'/Logo3.png'} width={100} height={100} alt="Logo" className=" w-14"></Image> 
+                                <Image src={'/Logo3.png'} width={100} height={100} alt="Logo" className=" w-14 rounded-xl"></Image> 
                             </h1>
                         </Link>
                     </div>
