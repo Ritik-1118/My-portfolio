@@ -24,7 +24,7 @@ const Projects = () => {
                     initial={{x:0,y:0}}
                     whileInView={{x:"0vw",y:"0vw"}}
                     transition={{duration:1.5}}
-                    className='grid lg:grid-cols-12 md:grid-cols-2 sm:grid-cols-4 lg:gap-24 sm:gap-6 py-20'
+                    className='grid lg:grid-cols-12 md:grid-cols-2 sm:grid-cols-4 lg:gap-24 sm:gap-6 py-20 items-center'
                 >
                     <Project 
                         img={images.portfolio} 

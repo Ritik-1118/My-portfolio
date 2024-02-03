@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
     return (
         <html lang="en">
             <body
-                className={`${inter.className} bg-blue-900 text-black home dark:text-white h-full selection:bg-gray-50 dark:selection:bg-gray-800`}
+                className={`${inter.className} bg-gradient-to-b from-[#05014f] to-black text-black home dark:text-white h-full`}
             >
                     <Navbar/>
                     <Header/>

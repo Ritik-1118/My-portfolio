@@ -1,7 +1,7 @@
 const images = {
     
     portfolio:[
-        {url:'/project_img/portfolio/portfolio1.png'},
+        {url:'/project_img/portfolio/Portfolio1.png'},
         {url:'/project_img/portfolio/portfolio2.png'},
     ],
     
