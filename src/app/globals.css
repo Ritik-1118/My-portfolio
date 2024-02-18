@@ -46,14 +46,16 @@
 }
 
 .img-bg{
-  min-width: 360px;
-  min-height: 200px;
-  /* border-top-left-radius: 20%; */
-  border-bottom-right-radius: 10%;
-  border-top-right-radius: 60%;
-  border-bottom-left-radius: 30%;
-  border-left-style: hidden;
-  border-bottom-style: hidden;
+    min-width: 360px;
+    min-height: 200px;
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 15%;
+    border-bottom-left-radius: 25%;
+    /* border-top-right-radius: 60%; */
+    border-right-style: hidden;
+    border-top-style: hidden;
+    /* border-left-style: hidden;
+    border-bottom-style: hidden; */
 }
 
 .img{
@@ -304,27 +306,23 @@
   border-image-repeat: round;
   border-radius: 20%;
 }
-/* .div-radius-10{
-  border-radius: 10%;
-} */
 
 .hover-effect {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  transition: transform 0.3s ease-in-out;
-  cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
 }
 /* Hover effect */
 .hover-effect:hover {
-  background-color: #0011ff;
+  /* background-color: #0011ffb3; */
   transform: scale(1.05);
-  box-shadow: 0 0 30px cyan;
+  /* box-shadow: 0 0 30px cyan; */
   
 }
-
 
 .slide-in{
   position: absolute;

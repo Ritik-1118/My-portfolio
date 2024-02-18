@@ -29,5 +29,13 @@ const images = {
     whatsApp_clone:[
         {url:'/project_img/whatsapp-clone/Whatsapp-clone.png'},
     ],
+    Food_Hut:[
+        {url:'/project_img/Food-Hut/1.png'},
+        {url:'/project_img/Food-Hut/2.png'},
+        {url:'/project_img/Food-Hut/3.png'},
+        {url:'/project_img/Food-Hut/4.png'},
+        {url:'/project_img/Food-Hut/5.png'},
+        {url:'/project_img/Food-Hut/6.png'},
+    ],
 }
 export default images

@@ -16,9 +16,9 @@ export default function Home() {
         // Default crooked rotation effect with CSS
         const currentElementDefault = tiltRef.current;
         if (currentElementDefault) {
-                currentElementDefault.style.transform = 'rotate(0deg) skewX(-10deg) skewY(0deg)';
-                currentElementDefault.style.transformOrigin = 'top left';
-            }
+            currentElementDefault.style.transform = 'rotate(0deg) skewX(-10deg) skewY(0deg)';
+            currentElementDefault.style.transformOrigin = 'top left';
+        }
             const onHover = () =>{
                 const currentElementHover = tiltRef.current;
                 if (currentElementHover) {
@@ -78,7 +78,7 @@ export default function Home() {
                         >
                             <span className="font-italic">&nbsp;Hey!</span><br/>
                             <span className='text-blue-600'><><span className="text-white">I&apos;m</span> Ritik,</></span> <br/>
-                            <h1 className="pb-4 md:text-2xl font-semibold text-blue-300">A Full Stack web developer</h1>
+                            <div className=" flex items-center pb-4 text-3xl font-semibold italic text-blue-300">A Full Stack web developer</div>
                         </motion.div>
                         <motion.div
                                 variants={fadeIn('down', 0.5)}
@@ -107,24 +107,24 @@ export default function Home() {
                 </div>
 
                 {/* Right side image */}
-                    <motion.div
-                        variants={fadeIn('left', 0.5)}
-                        initial='hidden'
-                        animate="show"
-                        exit="hidden"
-                        transition={{ duration: 0.5, ease: 'easeInOut' }}
-                        className="hidden xl:flex xl:flex-col pt-8">
-                        <Link href={'/pages/about'}>
-                            <Image
-                                ref={tiltRef}
-                                alt="Avatar"
-                                src={"/Gif/G.gif"}
-                                width={500}
-                                height={550}
-                                className="custom-box-shadow hover-effect img-bg rounded-lg border-8 border-blue-700 border-double"
-                            />
-                        </Link>
-                    </motion.div>                    
+                <motion.div
+                    variants={fadeIn('left', 0.5)}
+                    initial='hidden'
+                    animate="show"
+                    exit="hidden"
+                    transition={{ duration: 0.5, ease: 'easeInOut' }}
+                    className="hidden xl:flex xl:flex-col">
+                    <Link href={'/pages/about'}>
+                        <Image
+                            ref={tiltRef}
+                            alt="Avatar"
+                            src={"/Gif/G2.gif"}
+                            width={500}
+                            height={550}
+                            className=" hover-effect img-bg opacity-70 rounded-lg border-8 border-blue-700 border-double"
+                        />
+                    </Link>
+                </motion.div>                    
             </div>
         </div>
     );

@@ -24,26 +24,30 @@ const Projects = () => {
                     initial={{x:0,y:0}}
                     whileInView={{x:"0vw",y:"0vw"}}
                     transition={{duration:1.5}}
-                    className='grid lg:grid-cols-12 md:grid-cols-2 sm:grid-cols-4 lg:gap-24 sm:gap-6 py-20 items-center'
-                >
+                    className='grid lg:grid-cols-12 md:grid-cols-2 sm:grid-cols-4 lg:gap-24 sm:gap-6 py-20'
+                >   
                     <Project 
-                        img={images.portfolio} 
-                        projectName="My-Portfolio"
-                        url="https://my-portfolio-ritik-1118.vercel.app/"
-                        gitUrl="https://github.com/Ritik-1118/My-portfolio"
+                        img={images.Food_Hut}
+                        projectName="Food-Hut"
+                        url="https://food-hut-nine.vercel.app/"
+                        gitUrl="https://github.com/Ritik-1118/Food-Hut"
                     />
-                    <div className='col-span-6 my-4'>
-                        <div className=' text-5xl py-4 underline underline-offset-8 font-bold'>My-Portfolio</div>
+                    <div className='col-span-6'>
+                        <div className=' text-4xl py-4 underline underline-offset-8 font-bold'>Food-Hut</div>
                         <div className='flex'>
-                            <p className=' text-lg pt-4 italic'>The portfolio itself is a testament to my skills, built using Next.js for a smooth, optimized, and lightning-fast user experience. Tailwind CSS brings a modern and stylish design, ensuring an aesthetically pleasing presentation of my work.</p>
+                            <p className=' text-md pt-2 italic'>&quot;Food-Hut&quot; is a cutting-edge MERN stack web app featuring React, Express, Node, and Tailwind CSS, providing a seamless experience for customers and restaurant owners. Our intuitive admin panel simplifies management tasks, ensuring smooth operations. Secure payments are facilitated through Stripe integration, guaranteeing trust and efficiency. With deployment on Vercel, scalability and reliability are prioritized, ensuring uninterrupted service. Welcome to &quot;Food-Hut&quot; where innovation meets convenience in the world of food delivery.</p>
                         </div>
                         <div className='my-5'>
                             <p className=' text-3xl mb-4 underline underline-offset-4 flex'>Tools </p>
-                            <button type="button" className=' border rounded-lg px-2 py-1 mr-5 my-2 text-lg font-semibold'> Next.js</button>
+                            <button type="button" className=' border rounded-lg px-2 py-1 mr-5 my-2 text-lg font-semibold'> React.js</button>
+                            <button type="button" className=' border rounded-lg px-2 py-1 mr-5 my-2 text-lg font-semibold'> Node.js</button>
+                            <button type="button" className=' border rounded-lg px-2 py-1 mr-5 my-2 text-lg font-semibold'> Express</button>
                             <button type="button" className=' border rounded-lg px-2 py-1 mr-5 my-2 text-lg font-semibold'> Tailwind</button>
+                            <button type="button" className=' border rounded-lg px-2 py-1 mr-5 my-2 text-lg font-semibold'> Stripe</button>
                             <button type="button" className=' border rounded-lg px-2 py-1 mr-5 my-2 text-lg font-semibold'> Vercel</button>
                         </div>
                     </div>
+                    
                 </motion.div>
                 <div className='flex items-center'>
                     <hr className=' text-3xl w-1/2'/>
@@ -86,6 +90,7 @@ const Projects = () => {
                     <div className='border rounded-full text-2xl px-3'>3</div>
                     <hr className=' text-3xl w-1/2'/>
                 </div>
+
                 {/* Project 3 */}
                 <motion.div 
                     whileHover={{scale:1.05}}
@@ -98,7 +103,7 @@ const Projects = () => {
                         img={images.whatsApp_clone}
                         projectName="Realtime ChatApp"
                         url="https://chatapp-dun-nine.vercel.app/"
-                        gitUrl=""
+                        gitUrl="https://github.com/Ritik-1118/ChatApp-B"
                     />
                     <div className='col-span-6'>
                         <div className=' text-4xl py-4 underline underline-offset-8 font-bold'>Realtime Live ChatApp</div>

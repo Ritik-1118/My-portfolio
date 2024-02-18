@@ -4,11 +4,9 @@ import React, { useEffect, useRef} from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import SkillsContainer from "../../components/Skills.js"
+import SkillsSm from '../../components/SkillsSm.js'
 import { motion } from "framer-motion";
 import { fadeIn } from "../../../../variants";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBootstrap, faCss3, faHtml5, faJsSquare, faPython, faReact, faWordpress, faPhp, faGitAlt, faGithubAlt } from "@fortawesome/free-brands-svg-icons";
-import { FaC, FaDatabase } from 'react-icons/fa6';
 
 // Tilt.js for animation
 import VanillaTilt from 'vanilla-tilt';
@@ -92,7 +90,7 @@ export default function About() {
                     </motion.div>
                 </div>
 
-                {/* Skills in phone*/} 
+                {/* Skills in phone
                 <div className="div-container-1 rounded-3xl mt-8 block md:hidden">
                     <motion.h1 variants={fadeIn('down', 0.6)} initial='hidden' animate="show" exit="hidden" className="text-center text-white text-2xl font-semibold mb-4">Skills & <span className='text-blue-500'>Abilities</span></motion.h1>
                     <div className="flex flex-wrap justify-center space-x-4 py-4 space-y-4">
@@ -145,7 +143,8 @@ export default function About() {
                         <h1 className="icon-name text-white text-xl text-center mt-2">GitHub</h1>
                     </motion.div>
                     </div>
-                </div>
+                </div>*/} 
+                <SkillsSm />
             </div>
             {/* Skills in desktop*/} 
             <div className='hidden md:block pb-10 rounded-lg'>
