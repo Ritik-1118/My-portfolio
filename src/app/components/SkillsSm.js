@@ -8,8 +8,6 @@ import { fadeIn } from "../../../variants.js";
 
 const SkillsSm = () => {
     return <>
-        
-    
         <section className="">
             <div className="">
                 <div className="container mx-auto py-[14vh]">

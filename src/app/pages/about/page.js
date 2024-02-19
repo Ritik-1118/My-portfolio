@@ -25,10 +25,10 @@ export default function About() {
 
         if (tiltRef.current) {
             VanillaTilt.init(tiltRef.current, {
-            max: 25, // Maximum tilt rotation angle
-            speed: 400, // Tilt speed
-            glare: true, // Add glare effect (optional)
-            "max-glare": 0.5 // Maximum glare opacity (optional)
+                max: 25, // Maximum tilt rotation angle
+                speed: 400, // Tilt speed
+                glare: true, // Add glare effect (optional)
+                "max-glare": 0.5 // Maximum glare opacity (optional)
             });
         };
 
@@ -68,7 +68,7 @@ export default function About() {
                                     className="text-base font-style">
                                     I&apos;m pursuing BCA at Guru Govind Singh Indraprastha University (GGSIPU). I am very passionate about improving my coding skills & developing applications & websites. My educational background has equipped me with a strong foundation in Web Development.
                         </motion.p>
-                        <Link href={'https://drive.google.com/file/d/15ywExZZ5ixJdljkGuf6awwTiHkJAx8nE/view?usp=drivesdk'} target='_blank'>
+                        <Link href={'https://drive.google.com/file/d/1fZh2fus4I6KK3BvRaNA9sXEdHoP6RZ1R/view?usp=drivesdk'} target='_blank'>
                         <motion.button variants={fadeIn('right', 0.3)}
                                     initial='hidden'
                                     animate="show"
@@ -85,7 +85,7 @@ export default function About() {
                         initial='hidden'
                         animate="show"
                         exit="hidden"
-                        className=' flex-1 flex items-center justify-center '>
+                        className=' flex-1 flex items-center justify-center sm:mb-4'>
                     <Image ref={tiltRef} src={'/Gif/codder2.gif'}  width={400} height={400} alt='Coder Image' className='-z-3 hover-effect gifimage' />
                     </motion.div>
                 </div>
@@ -143,8 +143,10 @@ export default function About() {
                         <h1 className="icon-name text-white text-xl text-center mt-2">GitHub</h1>
                     </motion.div>
                     </div>
-                </div>*/} 
-                <SkillsSm />
+                </div>*/}
+                <div className='md:hidden'>
+                    <SkillsSm />
+                </div>
             </div>
             {/* Skills in desktop*/} 
             <div className='hidden md:block pb-10 rounded-lg'>
