@@ -5,8 +5,6 @@ import {
     HiUser,
     HiEnvelope,
     HiViewColumns,
-    HiRectangleGroup,
-    HiChatBubbleBottomCenterText,
 } from 'react-icons/hi2';
 
 import Link from 'next/link';
@@ -17,10 +15,6 @@ export const NavData = [
     { name: 'about', path: '/pages/about', icon: <HiUser /> },
     { name: 'projects', path: '/pages/projects', icon: <HiViewColumns /> },
     { name: 'contact', path: '/pages/contacts', icon: <HiEnvelope /> },
-    
-    // { name: 'services', path: '/pages/services', icon: <HiRectangleGroup /> },
-    // { name: 'testimonials', path: '/pages/testimonials', icon: <HiChatBubbleBottomCenterText /> },
-
     ];
 
 const Navbar = () => {
@@ -36,19 +30,21 @@ const Navbar = () => {
                         href={link.path}  
                         key={index}
                     >
-                        {/* tooltip */}
-                        <div className='absolute pl-12 hidden xl:group-hover:flex'>
-                            <div className='bg-white relative flex items-center p-[6px] rounded-[3px]'>
-                            <div className='text-[12px] leading-none font-semibold capitalize text-blue-900'>
-                                {link.name}
+                        <>
+                            {/* tooltip */}
+                            <div className='absolute pl-12 hidden xl:group-hover:flex'>
+                                <div className='bg-white relative flex items-center p-[6px] rounded-[3px]'>
+                                <div className='text-[12px] leading-none font-semibold capitalize text-blue-900'>
+                                    {link.name}
+                                </div>
+                                {/* triangle */}
+                                <div className='border-solid border-l-white border-l-8 border-y-transparent border-y-[6px] absolute -left-4'></div>
+                                </div>
                             </div>
-                            {/* triangle */}
-                            <div className='border-solid border-l-white border-l-8 border-y-transparent border-y-[6px] absolute -left-4'></div>
-                            </div>
-                        </div>
-                        
-                        {/* icon */}
-                        <div>{link.icon}</div>
+                            
+                            {/* icon */}
+                            <div>{link.icon}</div>
+                        </>
                     </Link>
                 ))}
             </div>
