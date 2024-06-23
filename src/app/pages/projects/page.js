@@ -42,6 +42,7 @@ const Projects = () => {
                             <button type="button" className=' border rounded-lg px-2 py-1 mr-5 my-2 text-lg font-semibold'> React.js</button>
                             <button type="button" className=' border rounded-lg px-2 py-1 mr-5 my-2 text-lg font-semibold'> Node.js</button>
                             <button type="button" className=' border rounded-lg px-2 py-1 mr-5 my-2 text-lg font-semibold'> Express</button>
+                            <button type="button" className=' border rounded-lg px-2 py-1 mr-5 my-2 text-lg font-semibold'> MongoDb</button>
                             <button type="button" className=' border rounded-lg px-2 py-1 mr-5 my-2 text-lg font-semibold'> Tailwind</button>
                             <button type="button" className=' border rounded-lg px-2 py-1 mr-5 my-2 text-lg font-semibold'> Stripe</button>
                             <button type="button" className=' border rounded-lg px-2 py-1 mr-5 my-2 text-lg font-semibold'> Vercel</button>
@@ -73,6 +74,7 @@ const Projects = () => {
                             <button type="button" className=' border rounded-lg px-2 py-1 mr-5 my-2 text-lg font-semibold'> React.js</button>
                             <button type="button" className=' border rounded-lg px-2 py-1 mr-5 my-2 text-lg font-semibold'> Node.js</button>
                             <button type="button" className=' border rounded-lg px-2 py-1 mr-5 my-2 text-lg font-semibold'> Express</button>
+                            <button type="button" className=' border rounded-lg px-2 py-1 mr-5 my-2 text-lg font-semibold'> MongoDb</button>
                             <button type="button" className=' border rounded-lg px-2 py-1 mr-5 my-2 text-lg font-semibold'> Tailwind</button>
                             <button type="button" className=' border rounded-lg px-2 py-1 mr-5 my-2 text-lg font-semibold'> JWT</button>
                             <button type="button" className=' border rounded-lg px-2 py-1 mr-5 my-2 text-lg font-semibold'> Vercel</button>
@@ -115,6 +117,7 @@ const Projects = () => {
                             <button type="button" className=' border rounded-lg px-2 py-1 mr-5 my-2 text-lg font-semibold'> Next.js</button>
                             <button type="button" className=' border rounded-lg px-2 py-1 mr-5 my-2 text-lg font-semibold'> Node.js</button>
                             <button type="button" className=' border rounded-lg px-2 py-1 mr-5 my-2 text-lg font-semibold'> Express</button>
+                            <button type="button" className=' border rounded-lg px-2 py-1 mr-5 my-2 text-lg font-semibold'> MongoDb</button>
                             <button type="button" className=' border rounded-lg px-2 py-1 mr-5 my-2 text-lg font-semibold'> Tailwind</button>
                             <button type="button" className=' border rounded-lg px-2 py-1 mr-5 my-2 text-lg font-semibold'> Zegocloud</button>
                             <button type="button" className=' border rounded-lg px-2 py-1 mr-5 my-2 text-lg font-semibold'> Vercel</button>
