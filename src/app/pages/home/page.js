@@ -43,7 +43,7 @@ export default function Home() {
             }
             // Cleanup function to remove the event listener
             return () => {
-                const currentElementRemoveListener = tiltRef.current;
+                const currentElementRemoveListener = currentElementEventListener;
                 if (currentElementRemoveListener) {
                     currentElementRemoveListener.removeEventListener('mouseenter', onHover);
                 }
