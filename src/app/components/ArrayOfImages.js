@@ -37,5 +37,9 @@ const images = {
         {url:'/project_img/Food-Hut/5.png'},
         {url:'/project_img/Food-Hut/6.png'},
     ],
+    Notes_Keeper:[
+        {url:'/project_img/Notes-Keeper/1.png'},
+        {url:'/project_img/Notes-Keeper/2.png'},
+    ],
 }
 export default images
