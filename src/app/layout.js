@@ -12,7 +12,7 @@ import ParticlesBg from "./components/ParticlesBg"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-        title: "Portfolio",
+        title: "Ritik | Portfolio",
         description: "Created By Ritik",
     };
 
