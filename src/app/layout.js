@@ -22,7 +22,8 @@ export default function RootLayout({ children }) {
                 <link rel="icon" href="/favicon.ico" />
             </head>
             <body
-                className={`${inter.className} bg-gradient-to-b from-[#05014f] to-black text-black home dark:text-white h-full`}
+                // className={`${inter.className} bg-gradient-to-b from-[#05014f] to-black text-black home dark:text-white h-full`}
+                className={`${inter.className} bg-gradient-to-br from-[#070068] via-black to-black home dark:text-white h-full`}
             >
                 <Navbar/>
                 <Header/>
