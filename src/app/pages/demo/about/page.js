@@ -99,9 +99,9 @@ export default function About () {
                             </div>
                         </div>
                         {/* Skills in desktop*/ }
-                        <div className='hidden relative w-full md:block pb-10 -mt-10 z-50 rounded-lg border border-red-600'>
-                            <StarSplineAbout />
-                            <div className='max-w-6xl mx-auto absolute inset-0'>
+                        <div className='hidden relative w-full md:block pb-10 rounded-lg'>
+                            <StarSplineAbout /> {/* stars animation in background*/ }
+                            <div className='absolute inset-0'>
                                 <SkillsContainer />
                             </div>
                         </div>
