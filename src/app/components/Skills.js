@@ -54,7 +54,7 @@ export const Skills = ({name,x,y,icon}) =>{
 const SkillsContainer = () =>{
     return(
         <>
-            <h2 className=" font-bold text-8xl my-8 w-full text-center text-blue-500">Skills</h2>
+            <h2 className=" font-bold text-8xl py-8 w-full text-center text-blue-500">Skills</h2>
             <div className=" w-full h-screen relative flex items-center justify-center rounded-full bg-circularLight">
                 <motion.div className=" flex items-center justify-center rounded-full font-semibold text-white p-8 shadow-black cursor-pointer"
                     whileHover={{scale:1.05}}

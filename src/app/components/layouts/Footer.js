@@ -2,7 +2,24 @@
 import { useEffect, useState } from 'react';
 
 const Footer = () => {
-    const [showFooter, setShowFooter] = useState(true); // Start with the footer shown
+    const [ showFooter, setShowFooter ] = useState( false );
+
+    useEffect( () => {
+        const handleScroll = () => {
+            const { scrollY, innerHeight } = window;
+            const { scrollHeight } = document.body;
+
+            if ( scrollY + innerHeight >= scrollHeight ) {
+                setShowFooter( true );
+            } else {
+                setShowFooter( false );
+            }
+        };
+        window.addEventListener( 'scroll', handleScroll );
+        return () => {
+            window.removeEventListener( 'scroll', handleScroll );
+        };
+    }, [] );
 
     useEffect(() => {
         // Function to check screen width and hide the footer on smaller screens
@@ -27,7 +44,7 @@ const Footer = () => {
     }, []);
 
     return (
-        <footer className={`bottom-0 left-0 right-0 bg-blue-900 text-white py-4 text-center transition-opacity translate-z-0 duration-500 ${showFooter ? '' : 'hidden'}`}>
+        <footer className={`sticky bottom-0 left-0 right-0 bg-blue-900 text-white py-4 text-center transition-opacity translate-z-0 duration-500 ${showFooter ? '' : 'hidden'}`}>
             <div className="container mx-auto">
                 <p>&copy; {new Date().getFullYear()} Portfolio. All rights reserved.</p>
             </div>

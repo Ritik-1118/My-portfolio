@@ -9,7 +9,7 @@ import { PageWrapper } from '../../animations';
 const Contacts = () => {
     return (
         <PageWrapper>
-            <div className="min-h-screen ">
+            <div className="max-w-6xl mx-auto min-h-screen ">
                 <div className="space-y-2 pt-6 pb-8 md:space-y-5">
                     <motion.h1 
                         variants={fadeIn('right',0.2)}

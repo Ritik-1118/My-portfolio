@@ -7,7 +7,7 @@ import { PageWrapper } from '../../animations';
 const Projects = () => {
     return (
         <PageWrapper>
-            <div className="min-h-screen divide-y divide-gray-200 dark:divide-gray-700">
+            <div className="max-w-6xl mx-auto min-h-screen divide-y divide-gray-200 dark:divide-gray-700">
                 <div className="space-y-2 pt-6 pb-10 md:space-y-5">
                     <h1 className="text-center text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-blue-500 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
                         PROJECTS
@@ -22,7 +22,7 @@ const Projects = () => {
                         description="Designed and developed a dynamic Realtime ChatApp, empowering users with seamless individual messaging(text and emojies), multimedia sharing(images and audio), and advanced video and voice calling capabilities for an enriched communication experience."
                         url="https://chatapp-dun-nine.vercel.app/"
                         gitUrl="https://github.com/Ritik-1118/ChatApp-B"
-                        tools={["React.js","Node.js","Express","MongoDb","Tailwind","Stripe","Zegocloud","Vercel"]}
+                        tools={["React","Node","Express","MongoDb","Tailwind","Stripe","Zegocloud","Vercel"]}
                     />
                     <AddProject
                         index={2}
@@ -31,10 +31,28 @@ const Projects = () => {
                         description="&quot;Food-Hut&quot; is a cutting-edge MERN stack web app featuring React, Express, Node, and Tailwind CSS, providing a seamless experience for customers and restaurant owners. Our intuitive admin panel simplifies management tasks, ensuring smooth operations. Secure payments are facilitated through Stripe integration, guaranteeing trust and efficiency. With deployment on Vercel, scalability and reliability are prioritized, ensuring uninterrupted service. Welcome to &quot;Food-Hut&quot; where innovation meets convenience in the world of food delivery."
                         url="https://food-hut-nine.vercel.app/"
                         gitUrl="https://github.com/Ritik-1118/Food-Hut"
-                        tools={["Next.js","Node.js","Express","MongoDb","Tailwind","Stripe","Vercel"]}
+                        tools={["Next.js","Node","Express","MongoDb","Tailwind","Stripe","Vercel"]}
                     />
                     <AddProject
                         index={3}
+                        projectName="Tech Bazzar"
+                        img={images.TechBazzar}
+                        description="This is a full-featured E-commerce web application built using the MERN stack (MongoDB, Express.js, React, Node.js). It allows users to browse products, add them to the cart, and make purchases securely."
+                        url="#"
+                        gitUrl="https://github.com/Ritik-1118/E-commerce"
+                        tools={["React","Node","MongoDB","Tailwind","Redux",,"JWT","Stripe"]}
+                    />
+                    <AddProject
+                        index={4}
+                        projectName="IMS (Inentory Management System)"
+                        img={images.IMS}
+                        description="The Inventory Management System (IMS) is a comprehensive solution designed to streamline and enhance inventory control, order management, and supply chain operations. This project includes features for inventory tracking, order management, supplier and customer management, and reporting and analytics."
+                        url="#"
+                        gitUrl="https://github.com/Ritik-1118/IMS"
+                        tools={["React","Node","Tailwind","Redux","Chart.js"]}
+                    />
+                    <AddProject
+                        index={5}
                         img={images.Notes_Keeper}
                         projectName="Notes Keeper"
                         description="Notes Keeper is designed to streamline note-taking and management, making it more efficient and user-friendly. With seamless create, read, update, and delete (CRUD) operations, users have complete control over their information. The app also allows for easy categorization of notes through an intuitive labeling system, ensuring that all notes are organized and easily accessible."
@@ -43,7 +61,7 @@ const Projects = () => {
                         tools={["TypeScript","React.js","Node.js","Express","MongoDb","Tailwind","Vercel"]}
                     />
                     <AddProject
-                        index={4}
+                        index={6}
                         projectName="SOlvify MERN-STACK"
                         img={images.solvify}
                         description="Explore my MERN project, uniting Node.js, Express.js, React.js, and Tailwind CSS for a seamless full-stack experience. It boasts secure user authentication with JWT, responsive design for various devices, and an admin panel for efficient management. This project exemplifies my ability to deliver modern, user-friendly web applications, blending backend and frontend technologies seamlessly."
@@ -52,17 +70,16 @@ const Projects = () => {
                         tools={["React.js","Node.js","Express","MongoDb","Tailwind","JWT","Vercel"]}
                     />
                     <AddProject
-                        index={5}
+                        index={7}
                         projectName="Online-Shoe-store"
                         img={images.online_store}
-                        description="Online-Shoe-store is an online store, where users can find array of shoes and services, It comes with an administrator dashboard for creating, deleting, updating posts basically it can perform CRUD operations.</p>
-                        <br /><p>It also comes with a checkout functionality using stripe which makes it easy to pay for a purchase online."
+                        description="Online-Shoe-store is an online store, where users can find array of shoes and services, It comes with an administrator dashboard for creating, deleting, updating posts basically it can perform CRUD operations.It also comes with a checkout functionality using stripe which makes it easy to pay for a purchase online."
                         url="https://online-shoe-store-sepia.vercel.app/"
                         gitUrl="#"
                         tools={["Next.js","Strapi","Tailwind","Vercel"]}
                     />
                     <AddProject
-                        index={6}
+                        index={8}
                         projectName="currency_converter"
                         img={images.converter}
                         description="Designed a simple Currency Converter Web App,providing users with real-time exchange rates, effortless currency conversion."

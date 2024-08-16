@@ -53,7 +53,7 @@ export default function Home() {
 
     return (
         <PageWrapper>
-            <div className="min-h-screen divide-y divide-gray-100 dark:divide-gray-700">
+            <div className="max-w-6xl mx-auto min-h-screen divide-y divide-gray-100 dark:divide-gray-700">
                 <div className="space-y-2 pt-5 pb-8 md:space-x-5">
                     <motion.h1
                         variants={fadeIn('left', 0.4)}

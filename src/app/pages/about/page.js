@@ -40,7 +40,7 @@ export default function About() {
     return (
         <>
         <PageWrapper>
-            <div className="min-h-screen divide-y divide-gray-200 dark:divide-gray-700">
+            <div className="max-w-6xl mx-auto min-h-screen divide-y divide-gray-200 dark:divide-gray-700">
                 <div className="space-y-2 pt-6 pb-8 md:space-y-5">
                     {/* About me heading */}
                     <motion.h1

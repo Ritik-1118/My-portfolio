@@ -4,7 +4,20 @@ const images = {
         {url:'/project_img/portfolio/Portfolio1.png'},
         {url:'/project_img/portfolio/portfolio2.png'},
     ],
-    
+    TechBazzar:[
+        {url:'/project_img/TechBazzar/1.png'},
+        {url:'/project_img/TechBazzar/2.png'},
+        {url:'/project_img/TechBazzar/3.png'},
+        {url:'/project_img/TechBazzar/4.png'},
+        {url:'/project_img/TechBazzar/5.png'},
+    ],
+    IMS:[
+        {url:'/project_img/IMS/1.png'},
+        {url:'/project_img/IMS/2.png'},
+        {url:'/project_img/IMS/3.png'},
+        {url:'/project_img/IMS/4.png'},
+        {url:'/project_img/IMS/5.png'},
+    ],
     solvify:[
         {url:'/project_img/solvify/solvify1.png'},
         {url:'/project_img/solvify/solvify2.png'},

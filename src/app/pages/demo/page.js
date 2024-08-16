@@ -16,7 +16,7 @@ const RobotCanvas = dynamic( () => import( "../../components/Three/RobotCanvasCo
 export default function Page () {
     return (
         <>
-            <main className="">
+            <main className="max-w-6xl mx-auto">
                 <div className="relative max-w-6xl mx-auto h-screen">
                     <Spline
                         scene="https://prod.spline.design/D1COLzCYvDbCeJWs/scene.splinecode"
