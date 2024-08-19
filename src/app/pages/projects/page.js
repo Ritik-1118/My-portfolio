@@ -35,7 +35,7 @@ const Projects = () => {
                     />
                     <AddProject
                         index={3}
-                        projectName="Tech Bazzar"
+                        projectName="Tech Bazaar"
                         img={images.TechBazzar}
                         description="This is a full-featured E-commerce web application built using the MERN stack (MongoDB, Express.js, React, Node.js). It allows users to browse products, add them to the cart, and make purchases securely."
                         url="#"
