@@ -349,16 +349,6 @@
 
 
 
-/* animations.css */
-.swup-transition-main {
-  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
-}
-
-.swup-transition-main.swup-exiting {
-  transform: translateY(20px);
-  opacity: 0;
-}
-
 
 /* Heading animation */
 .txt{
