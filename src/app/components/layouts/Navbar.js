@@ -8,7 +8,7 @@ import {
 } from 'react-icons/hi2';
 
 import Link from 'next/link';
-import { useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 
 export const NavData = [
     { name: 'home', path: '/', icon: <HiHome /> },
@@ -18,8 +18,7 @@ export const NavData = [
     ];
 
 const Navbar = () => {
-    const router = useRouter();
-    const pathname = router.pathname;
+    const pathname = usePathname();
 
     return (
         <nav className='flex fixed bottom-0 left-0 z-50 items-center xl:justify-center w-full xl:w-16 xl:max-w-md xl:h-screen '>
